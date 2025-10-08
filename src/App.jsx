@@ -1,5 +1,6 @@
-import HelloWorld from "../HelloWorld"
+import HelloWorld from "./HelloWorld"
 import { useState } from "react";
+import Counter from "./counter/Counter";
 
 function App() {
   const [message,setMessage]=useState("");
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
     <HelloWorld/>
+    <Counter intialValue={0}/>
     <button onClick={handleClick}>Run Project</button>
     <p>{message}</p>
     </>
